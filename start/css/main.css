@@ -1,0 +1,25 @@
+#main{
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20%;
+    
+}
+
+p{
+    font-size: 22px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
