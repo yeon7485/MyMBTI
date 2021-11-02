@@ -1,8 +1,8 @@
-#qna{
+#qna {
     display: none;
 }
 
-.qBox{
+.qBox {
     background-color: whitesmoke;
     text-align: center;
     border-radius: 20px;
@@ -11,7 +11,7 @@
     width: 80%;
 }
 
-.answerList{
+.answerList {
     background-color: whitesmoke;
     border-radius: 20px;
     display: block;
@@ -20,7 +20,32 @@
     font-size: 20px;
 }
 
-.answerList:hover, .answerList:focus{
+.answerList:hover,
+.answerList:focus {
     background-color: #ff91a3;
     color: whitesmoke;
+}
+
+.status {
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.statusBar {
+    height: 100%;
+    border-radius: 20px;
+    /* 그라데이션 상태바 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7caca+0,fe9090+50,ff5c5c+100 */
+    background: #f7caca;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f7caca 0%, #fe9090 50%, #ff5c5c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f7caca 0%, #fe9090 50%, #ff5c5c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f7caca 0%, #fe9090 50%, #ff5c5c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7caca', endColorstr='#ff5c5c', GradientType=0);
+    /* IE6-9 */
 }
