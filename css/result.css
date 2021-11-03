@@ -1,0 +1,51 @@
+#result{
+    display: none;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.resultName{
+    font-size: 26px;
+}
+
+.resultDesc{
+    font-size: 20px;
+    line-height: 180%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.kakao{
+    color: white;
+    background-color: #FEE500;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.kakao:hover,
+.kakao:focus {
+    background-color: whitesmoke;
+    color: #FEE500;
+}
+
+@media screen and (max-width: 760px) {
+    h1{
+        font-size: 20px;
+    }
+    .resultName{
+        font-size: 18px;
+    }
+    .resultDesc{
+        font-size: 14px;
+    }
+    #resultImg{
+        width: 50%;
+        height: 50%;
+    }
+}

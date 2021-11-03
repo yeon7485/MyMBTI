@@ -14,17 +14,24 @@ function calResult() {
 
 function setResult(){
     let point = calResult();
-    const resultName = document.querySelector('.resultname');
-    resultName.innerHTML = infoList[point].name;
+    const resultName = document.querySelector('.resultName');
+    var name = infoList[point].name;
+    name = name.replace(/, /ig, '<br>');
+    resultName.innerHTML = name;
+    
 
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = 'img/image-' + point + '.png';
-    resuntImg.src = imgURL;
+    resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
+
+    const resultDesc = document.querySelector('.resultDesc');
+    resultDesc.innerHTML = infoList[point].desc;
 }
+
 
 function goResult() {
     qna.style.WebkitAnimation = "fadeOut 0.7s";
@@ -37,9 +44,7 @@ function goResult() {
             result.style.display = "block";
         }, 300)
     })
-
-    console.log(select);
-    calResult();
+    setResult();
 }
 
 // 답변 버튼 만들기
@@ -76,7 +81,7 @@ function addAnswer(answerText, qIdx, idx) {
         }
         setTimeout(() => {
             var target = qnaList[qIdx].a[idx].type;
-            for (let j = 0; j < target.length; j++) {
+            for (let i = 0; i < target.length; i++) {
                 select[target[i]] += 1;
             }
             
