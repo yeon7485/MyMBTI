@@ -1,4 +1,4 @@
-const url = 'https://love-type-twelve.netlify.app';
+const url = 'https://love-type-twelve.netlify.app/';
 
 
 function setShare(){
