@@ -1,9 +1,10 @@
 const url = 'https://love-type-twelve.netlify.app';
 
+
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
-  const shareTitle = '십이간지 연애유형 결과';
+  const shareTitle = '십이간지 연애 유형 결과';
   const shareDes = infoList[resultAlt].name;
   const shareImage = url + 'img/image-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
@@ -22,7 +23,7 @@ function setShare(){
 
     buttons: [
       {
-        title: '결과확인하기',
+        title: '결과 확인하기',
         link: {
           mobileWebUrl: shareURL,
           webUrl: shareURL,

@@ -14,6 +14,10 @@ h1{
     font-weight: bold;
 }
 
+.btn{
+    font-size: 22px;
+}
+
 @media screen and (max-width: 760px) {
     #main{
         width: 90%;
@@ -27,5 +31,8 @@ h1{
     img{
         width: 90%;
         height: 90%;
+    }
+    .btn{
+        font-size: 18px;
     }
 }

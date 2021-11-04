@@ -6,6 +6,13 @@
     border-radius: 20%;
 }
 
+#shareResult{
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20%;
+}
+
 .resultName{
     font-size: 26px;
 }
@@ -23,7 +30,7 @@ h1{
 .kakao{
     color: white;
     background-color: #FEE500;
-    font-size: 20px;
+    font-size: 22px;
     border: 0px;
     border-radius: 20px;
 }
@@ -33,6 +40,11 @@ h1{
     background-color: whitesmoke;
     color: #FEE500;
 }
+
+.goHome{
+    font-size: 22px;
+}
+
 
 @media screen and (max-width: 760px) {
     h1{
